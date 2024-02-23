@@ -1,0 +1,88 @@
+/* Navbar styles */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding */
+    text-align: right; /* Align text to the right */
+}
+
+.navbar a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin-right: 20px; /* Add some margin between links */
+}
+.search-bar {
+        text-align: center;
+        margin-top: 50px; /* Adjust as per your requirement */
+    }
+
+    .search-bar input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 200px;
+        margin-right: 10px;
+    }
+
+    .search-bar button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .search-bar button:hover {
+        background-color: #0056b3;
+    }
+
+
+/* Container styles */
+.container {
+    width: 80%; /* Width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border color */
+    padding: 10px; /* Padding */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+    background-color: #f2f2f2; /* Header background color */
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray */
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #ff4500; /* Change link color on hover */
+}
+
+/* Background image */
+body {
+    background-image: url('pexels-fwstudio-172277.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background image */
+}
+ 

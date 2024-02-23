@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Fallback color */
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            text-align: left;
+            padding-left: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh; /* Adjusted height to make room for the navbar and footer */
+           /* background-image: url('pexels-tirachard-kumtanom-733852.jpg');*/ /* Background image for the form */
+           /*  background-image: url('low-poly-grid-haikei.png'); */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0); /* Semi-transparent background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        body 
+        {
+			  width: 100%;
+			  height: 100%;
+			  --s: 194px; /* control the size */
+			  --c1: #f6edb3;
+			  --c2: #acc4a3;
+			
+			  --_l: #0000 calc(25% / 3), var(--c1) 0 25%, #0000 0;
+			  --_g: conic-gradient(from 120deg at 50% 87.5%, var(--c1) 120deg, #0000 0);
+			
+			  background: var(--_g), var(--_g) 0 calc(var(--s) / 2),
+			    conic-gradient(from 180deg at 75%, var(--c2) 60deg, #0000 0),
+			    conic-gradient(from 60deg at 75% 75%, var(--c1) 0 60deg, #0000 0),
+			    linear-gradient(150deg, var(--_l)) 0 calc(var(--s) / 2),
+			    conic-gradient(
+			      at 25% 25%,
+			      #0000 50%,
+			      var(--c2) 0 240deg,
+			      var(--c1) 0 300deg,
+			      var(--c2) 0
+			    ),
+			    linear-gradient(-150deg, var(--_l)) #55897c /* third color here */;
+			  background-size: calc(0.866 * var(--s)) var(--s);
+		}
+        

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('circle-scatter-haikei.png'); /* Background image for the page */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Align content to top and bottom */
+        }
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+        }
+        nav {
+            text-align: right;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+	.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ 
+    margin-top: 50px; /* Adjusted margin top */
+    margin-bottom: 50px; /* Adjusted margin bottom */
+}
+        h2 {
+            text-align: center;
+            margin-top: 0;
+            color: #333;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        select {
+            width: 100%;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row > div {
+            width: calc(50% - 5px); /* Adjust width for spacing */
+        }
+       
+        .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-row .half-width {
+    width: calc(50% - 5px); /* Adjust width for spacing */
+}
+.form-row .third-width {
+    width: calc(33.33% - 5px); /* Adjust width for spacing */
+}
+button[type="submit"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            }
+             body {
+  width: 100%;
+  height: 100%;
+  --s: 82px;
+  --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9;
+
+  --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+    linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    );
+  background-size: calc(1.732 * var(--s)) var(--s);
+}
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="AccountantHomePage.html">Home</a>
+    </nav>
+    <div class="container">
+        <h2>Student Form</h2>
+        <form action="Studentdetails" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="half-width">
+                        <label for="sex">Sex:</label>
+                        <select id="sex" name="sex">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="half-width">
+                        <label for="phonenumber">Phone Number:</label>
+                        <input type="text" id="phonenumber" name="phonenumber">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="third-width">
+                        <label for="course">Course:</label>
+                        <select id="course" name="course">
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="IT">IT</option>
+                        </select>
+                    </div>
+                    <div class="third-width">
+                        <label for="course-fee">Course Fee:</label>
+                        <input type="text" id="course-fee" name="coursefee">
+                    </div>
+                    <div class="third-width">
+                        <label for="paid">Paid:</label>
+                        <input type="text" id="paid" name="paid">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                        <label for="address">Address:</label>
+                        <!-- <textarea id="address" name="address" ></textarea> -->
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tuk Tuk College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
